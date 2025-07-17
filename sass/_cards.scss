@@ -1,0 +1,24 @@
+.card {
+  border: none;
+  box-shadow: $box-shadow-medium;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $box-shadow-hover;
+  }
+
+  .card-title {
+    font-weight: 600;
+    color: $color-primary;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: #555;
+
+    @media (max-width: $bp-tablet) {
+      font-size: 0.9rem;
+    }
+  }
+}

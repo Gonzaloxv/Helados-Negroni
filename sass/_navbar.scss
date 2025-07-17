@@ -1,0 +1,29 @@
+.navbar {
+  box-shadow: $box-shadow-light;
+  background-color: $color-light !important;
+
+  .navbar-nav .nav-link {
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &.active,
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .navbar-brand img {
+    width: 50px;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: rotate(0deg);
+    }
+
+    @media (max-width: $bp-tablet) {
+      width: 40px;
+    }
+  }
+}

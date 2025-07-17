@@ -1,0 +1,11 @@
+footer {
+  margin-top: auto;
+  background-color: $color-footer-bg;
+  color: $color-light;
+  border-top: 3px solid $color-primary;
+  font-size: 0.95rem;
+
+  .row > div {
+    opacity: 0.85;
+  }
+}
